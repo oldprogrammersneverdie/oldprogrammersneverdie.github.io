@@ -22,7 +22,8 @@ Then you can run a query similar to the following:
 
 ``` javascript
 
-db.posts.find({'$and': [{'title': {'$text': 'query'}}, {'content': {'$text': 'query'}}, {'excerpt': {'$text': 'query'}}]});
+db.posts.find({'$and': [{'title': {'$text': 'query'}},
+ {'content': {'$text': 'query'}}, {'excerpt': {'$text': 'query'}}]});
 
 ```
 With the $and operator we're including possible alternatives, with $or instead we're excluding some alternatives.
@@ -31,5 +32,6 @@ Since $text doesn't use regular expressions, install and Install are not the sam
 
 
 ``` javascript
-db.posts.find({'$and': [{'title': {'$regex': 'query', '$options': 'i'}}, {'content': {'$regex': 'query', '$options': 'i'}}, {'excerpt': {'$regex': 'query', '$options': 'i'}}]});
+db.posts.find({'$and': [{'title': {'$regex': 'query', '$options': 'i'}},
+{'content': {'$regex': 'query', '$options': 'i'}}, {'excerpt': {'$regex': 'query', '$options': 'i'}}]});
 ```
