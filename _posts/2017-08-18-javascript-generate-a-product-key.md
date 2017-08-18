@@ -45,9 +45,8 @@ This is solution helpful to you. We can implement the following solution:
 
 ## How to use??
 
-``` javascript
-console.log( generateProductKey() );
-	
-//Output: GHT78-L2H2M-9U3WF-CYBF2
+{% highlight javascript linenos %}
 
-```
+console.log( generateProductKey() ); //Output: GHT78-L2H2M-9U3WF-CYBF2
+
+{% endhighlight %}
