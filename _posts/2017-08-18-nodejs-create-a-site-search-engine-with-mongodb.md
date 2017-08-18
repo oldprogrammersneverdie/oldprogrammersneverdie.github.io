@@ -1,7 +1,7 @@
 ---
 title: NODEIS | CREATE A SITE SEARCH ENGINE WITH MONGODB
 description: The LIKE operator doesn't exist in MongoDB. This is not a problem.
-header: CREATE A SITE SEARCH ENGINE WITH MONGODB
+header: NODEIS | CREATE A SITE SEARCH ENGINE WITH MONGODB
 ---
 The LIKE operator doesn't exist in MongoDB. This is not a problem. The real problem here is to choose between two MongoDB operators that many people think are similar, namely $regex and $text.
 
