@@ -7,7 +7,8 @@ Generating a product key in JavaScript is a matter of creating random segments f
 
 This is solution helpful to you. We can implement the following solution:
 
-``` javascript
+{% highlight javascript linenos %}
+
 (function() {
 	function getRandomInt( min, max ) {
          return Math.floor( Math.random() * ( max - min + 1 ) ) + min;
@@ -39,7 +40,7 @@ This is solution helpful to you. We can implement the following solution:
 	}
 })();
 
-```
+{% endhighlight %}
 ## How to use??
 
 ``` javascript
