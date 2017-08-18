@@ -17,3 +17,19 @@ db.posts.createIndex({content: "text"});
 db.posts.createIndex({excerpt: "text"});
 
 ```
+
+Then you can run a query similar to the following:
+
+``` javascript
+
+db.posts.find({'$and': [{'title': {'$text': 'query'}}, {'content': {'$text': 'query'}}, {'excerpt': {'$text': 'query'}}]});
+
+```
+With the $and operator we're including possible alternatives, with $or instead we're excluding some alternatives.
+
+Since $text doesn't use regular expressions, install and Install are not the same thing. The match here is exact, so in order to get more results we should use $regex:
+
+
+``` javascript
+db.posts.find({'$and': [{'title': {'$regex': 'query', '$options': 'i'}}, {'content': {'$regex': 'query', '$options': 'i'}}, {'excerpt': {'$regex': 'query', '$options': 'i'}}]});
+```
