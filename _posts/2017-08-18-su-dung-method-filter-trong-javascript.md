@@ -42,6 +42,8 @@ for(var i= 0, l = arr.length; i< l; i++){
 
 console.log("Filter results:",newArr);
 
+//Filter results: { "name": "orange", "count": 5 },{ "name": "orange", "count": 16 }
+
 {% endhighlight %}
 
 ### ex2: Trường hợp xài filter.
@@ -60,6 +62,7 @@ var newArr = arr.filter(function(item){
 });
 
 console.log("Filter results:",newArr);
+//Filter results: { "name": "orange", "count": 5 },{ "name": "orange", "count": 16 }
 
 {% endhighlight %}
 
